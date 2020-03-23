@@ -1,0 +1,30 @@
+      {% extends "index/baseLayout.html" %}
+      {% load staticfiles %}
+      {% block body %}
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <header>
+
+        <div class="container">
+          <h1>{{ blog.Title }}</h1>
+            <h6>{{ blog.Date }}</h6>
+        </div>
+      </header>
+      <hr>
+      <body>
+      <main role="main">
+        <div class="container">
+          <p>{{ blog.Content}}</p>
+        </div>
+      </main>
+      </body>
+      <br />
+      <br />
+      <br />
+      <hr>
+
+      {% endblock %}
